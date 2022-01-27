@@ -1,5 +1,5 @@
 import {Command, Flags} from '@oclif/core'
-import {spawn} from 'node:child_process'
+import { spawn } from 'node:child_process'
 
 export default class NodeInit extends Command {
   static description = 'Initializes a node app based on git the template'
@@ -15,12 +15,12 @@ export default class NodeInit extends Command {
       hidden: false,
       multiple: false,
       env: 'NODE_PATH',
+      default: 'You should provide a valid git url',
       required: true,
     }),
   }
 
   async run(): Promise<void> {
-    const {flags} = await this.parse(NodeInit)
-    spawn(`wget ${flags.template}/archive/refs/heads/main.zip`)
+    console.log('chamou aqui')
   }
 }
