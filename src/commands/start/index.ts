@@ -1,5 +1,5 @@
 import {Command, Flags} from '@oclif/core'
-import { spawn } from 'node:child_process'
+import {execSync} from 'node:child_process'
 
 export default class NodeInit extends Command {
   static description = 'Initializes a node app based on git the template'
@@ -21,6 +21,10 @@ export default class NodeInit extends Command {
   }
 
   async run(): Promise<void> {
-    console.log('chamou aqui')
+    const {flags} = await this.parse(NodeInit)
+    console.log(`Cloning ${flags.template}`)
+    execSync(`git clone ${flags.template}`, {
+      stdio: [0, 1, 2],
+    })
   }
 }

@@ -21,6 +21,11 @@ export default class NodeInit extends Command {
 
   async run(): Promise<void> {
     const {flags} = await this.parse(NodeInit)
+    if (!flags.template) {
+      console.log('You must pass a github url')
+      return
+    }
+
     spawn(`wget ${flags.template}/archive/refs/heads/main.zip`)
   }
 }
