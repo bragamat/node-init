@@ -29,55 +29,15 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`node-init hello PERSON`](#node-init-hello-person)
-* [`node-init hello world`](#node-init-hello-world)
 * [`node-init help [COMMAND]`](#node-init-help-command)
+* [`node-init init`](#node-init-init)
 * [`node-init plugins`](#node-init-plugins)
 * [`node-init plugins:inspect PLUGIN...`](#node-init-pluginsinspect-plugin)
 * [`node-init plugins:install PLUGIN...`](#node-init-pluginsinstall-plugin)
 * [`node-init plugins:link PLUGIN`](#node-init-pluginslink-plugin)
 * [`node-init plugins:uninstall PLUGIN...`](#node-init-pluginsuninstall-plugin)
 * [`node-init plugins update`](#node-init-plugins-update)
-
-## `node-init hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ node-init hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/bragamat/node-init/blob/v0.0.0/dist/commands/hello/index.ts)_
-
-## `node-init hello world`
-
-Say hello world
-
-```
-USAGE
-  $ node-init hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ oex hello world
-  hello world! (./src/commands/hello/world.ts)
-```
+* [`node-init start`](#node-init-start)
 
 ## `node-init help [COMMAND]`
 
@@ -98,6 +58,26 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.10/src/commands/help.ts)_
+
+## `node-init init`
+
+Initializes a node app based on git the template
+
+```
+USAGE
+  $ node-init init -t <value>
+
+FLAGS
+  -t, --template=<value>  (required) Use the git template as default
+
+DESCRIPTION
+  Initializes a node app based on git the template
+
+EXAMPLES
+  $ node-init --template=https://github.com/bragamat/node-init
+```
+
+_See code: [dist/commands/init/index.ts](https://github.com/bragamat/node-init/blob/v0.0.0/dist/commands/init/index.ts)_
 
 ## `node-init plugins`
 
@@ -244,4 +224,24 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+## `node-init start`
+
+Initializes a node app based on git the template
+
+```
+USAGE
+  $ node-init start -t <value>
+
+FLAGS
+  -t, --template=<value>  (required) [default: You should provide a valid git url] Use the git template as default
+
+DESCRIPTION
+  Initializes a node app based on git the template
+
+EXAMPLES
+  $ node-init --template=https://github.com/bragamat/node-init
+```
+
+_See code: [dist/commands/start/index.ts](https://github.com/bragamat/node-init/blob/v0.0.0/dist/commands/start/index.ts)_
 <!-- commandsstop -->
