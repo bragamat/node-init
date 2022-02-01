@@ -372,49 +372,17 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
-"@oclif/color@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/@oclif/color/-/color-0.1.2.tgz"
-  dependencies:
-    ansi-styles "^3.2.1"
-    chalk "^3.0.0"
-    strip-ansi "^5.2.0"
-    supports-color "^5.4.0"
-    tslib "^1"
-
-"@oclif/color@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@oclif/color/-/color-1.0.0.tgz"
+"@oclif/color@^1.0.0", "@oclif/color@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.1.tgz#20ab9205e0924c6388918a88874e1f4b32df9970"
   dependencies:
     ansi-styles "^4.2.1"
     chalk "^4.1.0"
-    strip-ansi "^6.0.0"
+    strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@1.0.10", "@oclif/core@^1", "@oclif/core@^1.0.10", "@oclif/core@^1.0.8":
-  version "1.0.10"
-  resolved "https://registry.npmjs.org/@oclif/core/-/core-1.0.10.tgz"
-  dependencies:
-    "@oclif/linewrap" "^1.0.0"
-    chalk "^4.1.2"
-    clean-stack "^3.0.1"
-    cli-ux "6.0.5"
-    debug "^4.3.3"
-    fs-extra "^9.1.0"
-    get-package-type "^0.1.0"
-    globby "^11.0.4"
-    indent-string "^4.0.0"
-    is-wsl "^2.2.0"
-    lodash "^4.17.21"
-    semver "^7.3.5"
-    string-width "^4.2.3"
-    strip-ansi "^6.0.1"
-    tslib "^2.3.1"
-    widest-line "^3.1.0"
-    wrap-ansi "^7.0.0"
-
-"@oclif/core@^1.1.1", "@oclif/core@^1.2.0":
+"@oclif/core@^1", "@oclif/core@^1.0.10", "@oclif/core@^1.0.8", "@oclif/core@^1.1.1", "@oclif/core@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.2.0.tgz#f1110b1fe868e439f94f8b4ffad5dd8acf862294"
   dependencies:
@@ -468,22 +436,21 @@
     fast-levenshtein "^3.0.0"
     lodash "^4.17.21"
 
-"@oclif/plugin-plugins@^2.0.1":
-  version "2.0.11"
-  resolved "https://registry.npmjs.org/@oclif/plugin-plugins/-/plugin-plugins-2.0.11.tgz"
+"@oclif/plugin-plugins@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-2.1.0.tgz#af2def7992332e46137eac31c40947d9b077bff1"
   dependencies:
-    "@oclif/color" "^0.1.2"
-    "@oclif/core" "1.0.10"
+    "@oclif/color" "^1.0.1"
+    "@oclif/core" "^1.2.0"
     chalk "^4.1.2"
-    cli-ux "6.0.6"
     debug "^4.1.0"
     fs-extra "^9.0"
     http-call "^5.2.2"
-    load-json-file "^5.2.0"
+    load-json-file "^5.3.0"
     npm-run-path "^4.0.1"
     semver "^7.3.2"
     tslib "^2.0.0"
-    yarn "^1.21.1"
+    yarn "^1.22.17"
 
 "@oclif/plugin-warn-if-update-available@^2.0.3":
   version "2.0.4"
@@ -1262,13 +1229,6 @@ chalk@^2.0.0, chalk@^2.4.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-3.0.0.tgz"
-  dependencies:
-    ansi-styles "^4.1.0"
-    supports-color "^7.1.0"
-
 chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz"
@@ -1356,13 +1316,6 @@ cli-progress@^3.10.0:
   dependencies:
     string-width "^4.2.0"
 
-cli-progress@^3.9.1:
-  version "3.9.1"
-  resolved "https://registry.npmjs.org/cli-progress/-/cli-progress-3.9.1.tgz"
-  dependencies:
-    colors "^1.1.2"
-    string-width "^4.2.0"
-
 cli-spinners@^2.5.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.6.1.tgz#adc954ebe281c37a6319bfa401e6dd2488ffb70d"
@@ -1379,66 +1332,6 @@ cli-truncate@^0.2.1:
   dependencies:
     slice-ansi "0.0.4"
     string-width "^1.0.1"
-
-cli-ux@6.0.5:
-  version "6.0.5"
-  resolved "https://registry.npmjs.org/cli-ux/-/cli-ux-6.0.5.tgz"
-  dependencies:
-    "@oclif/core" "^1.0.8"
-    "@oclif/linewrap" "^1.0.0"
-    "@oclif/screen" "^1.0.4 "
-    ansi-escapes "^4.3.0"
-    ansi-styles "^4.2.0"
-    cardinal "^2.1.1"
-    chalk "^4.1.0"
-    clean-stack "^3.0.0"
-    cli-progress "^3.9.1"
-    extract-stack "^2.0.0"
-    fs-extra "^8.1"
-    hyperlinker "^1.0.0"
-    indent-string "^4.0.0"
-    is-wsl "^2.2.0"
-    js-yaml "^3.13.1"
-    lodash "^4.17.21"
-    natural-orderby "^2.0.1"
-    object-treeify "^1.1.4"
-    password-prompt "^1.1.2"
-    semver "^7.3.2"
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    supports-color "^8.1.0"
-    supports-hyperlinks "^2.1.0"
-    tslib "^2.0.0"
-
-cli-ux@6.0.6:
-  version "6.0.6"
-  resolved "https://registry.npmjs.org/cli-ux/-/cli-ux-6.0.6.tgz"
-  dependencies:
-    "@oclif/core" "1.0.10"
-    "@oclif/linewrap" "^1.0.0"
-    "@oclif/screen" "^1.0.4 "
-    ansi-escapes "^4.3.0"
-    ansi-styles "^4.2.0"
-    cardinal "^2.1.1"
-    chalk "^4.1.0"
-    clean-stack "^3.0.0"
-    cli-progress "^3.9.1"
-    extract-stack "^2.0.0"
-    fs-extra "^8.1"
-    hyperlinker "^1.0.0"
-    indent-string "^4.0.0"
-    is-wsl "^2.2.0"
-    js-yaml "^3.13.1"
-    lodash "^4.17.21"
-    natural-orderby "^2.0.1"
-    object-treeify "^1.1.4"
-    password-prompt "^1.1.2"
-    semver "^7.3.2"
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    supports-color "^8.1.0"
-    supports-hyperlinks "^2.1.0"
-    tslib "^2.0.0"
 
 cli-ux@^6.0.6:
   version "6.0.8"
@@ -1553,10 +1446,6 @@ color-support@^1.1.2:
 colors@1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/colors/-/colors-1.0.3.tgz"
-
-colors@^1.1.2:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/colors/-/colors-1.4.0.tgz"
 
 commander@2.6.0:
   version "2.6.0"
@@ -3329,9 +3218,9 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-load-json-file@^5.2.0:
+load-json-file@^5.3.0:
   version "5.3.0"
-  resolved "https://registry.npmjs.org/load-json-file/-/load-json-file-5.3.0.tgz"
+  resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-5.3.0.tgz#4d3c1e01fa1c03ea78a60ac7af932c9ce53403f3"
   dependencies:
     graceful-fs "^4.1.15"
     parse-json "^4.0.0"
@@ -5033,7 +4922,7 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.1.0, strip-ansi@^5.2.0:
+strip-ansi@^5.1.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-5.2.0.tgz"
   dependencies:
@@ -5116,7 +5005,7 @@ supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-supports-color@^5.3.0, supports-color@^5.4.0:
+supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz"
   dependencies:
@@ -5287,7 +5176,7 @@ ts-node@^10.2.1:
     make-error "^1.1.1"
     yn "3.1.1"
 
-tslib@^1, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
 
@@ -5642,9 +5531,9 @@ yargs@16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yarn@^1.21.1:
+yarn@^1.22.17:
   version "1.22.17"
-  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.17.tgz"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.17.tgz#bf910747d22497b573131f7341c0e1d15c74036c"
 
 yeoman-environment@^3.5.1:
   version "3.9.1"
