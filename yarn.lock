@@ -392,7 +392,7 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@1.0.10", "@oclif/core@^1", "@oclif/core@^1.0.10", "@oclif/core@^1.0.8":
+"@oclif/core@1.0.10":
   version "1.0.10"
   resolved "https://registry.npmjs.org/@oclif/core/-/core-1.0.10.tgz"
   dependencies:
@@ -414,14 +414,14 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^1.1.1", "@oclif/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.2.0.tgz#f1110b1fe868e439f94f8b4ffad5dd8acf862294"
+"@oclif/core@^1", "@oclif/core@^1.0.8", "@oclif/core@^1.1.1", "@oclif/core@^1.2.0", "@oclif/core@^1.3.6":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.6.4.tgz#fd213265199a8ef93adb358e15a04d74927eb522"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^3.0.2"
-    ansi-escapes "^4.3.0"
-    ansi-styles "^4.2.0"
+    ansi-escapes "^4.3.2"
+    ansi-styles "^4.3.0"
     cardinal "^2.1.1"
     chalk "^4.1.2"
     clean-stack "^3.0.1"
@@ -430,14 +430,14 @@
     ejs "^3.1.6"
     fs-extra "^9.1.0"
     get-package-type "^0.1.0"
-    globby "^11.0.4"
+    globby "^11.1.0"
     hyperlinker "^1.0.0"
     indent-string "^4.0.0"
     is-wsl "^2.2.0"
-    js-yaml "^3.13.1"
+    js-yaml "^3.14.1"
     lodash "^4.17.21"
     natural-orderby "^2.0.3"
-    object-treeify "^1.1.4"
+    object-treeify "^1.1.33"
     password-prompt "^1.1.2"
     semver "^7.3.5"
     string-width "^4.2.3"
@@ -453,10 +453,10 @@
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz"
 
 "@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.10":
-  version "5.1.10"
-  resolved "https://registry.npmjs.org/@oclif/plugin-help/-/plugin-help-5.1.10.tgz"
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.12.tgz#24a18631eb9b22cb55e1a3b8e4f6039fd42727e6"
   dependencies:
-    "@oclif/core" "^1.0.10"
+    "@oclif/core" "^1.3.6"
 
 "@oclif/plugin-not-found@^2.2.3":
   version "2.2.4"
@@ -899,7 +899,7 @@ ansi-escapes@^3.0.0, ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-3.2.0.tgz"
 
-ansi-escapes@^4.2.1, ansi-escapes@^4.3.0:
+ansi-escapes@^4.2.1, ansi-escapes@^4.3.0, ansi-escapes@^4.3.2:
   version "4.3.2"
   resolved "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-4.3.2.tgz"
   dependencies:
@@ -931,7 +931,7 @@ ansi-styles@^3.0.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@^4.0.0, ansi-styles@^4.1.0, ansi-styles@^4.2.0, ansi-styles@^4.2.1:
+ansi-styles@^4.0.0, ansi-styles@^4.1.0, ansi-styles@^4.2.0, ansi-styles@^4.2.1, ansi-styles@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz"
   dependencies:
@@ -2582,7 +2582,7 @@ globby@^11, globby@^11.0.3, globby@^11.0.4:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-globby@^11.0.1:
+globby@^11.0.1, globby@^11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
   dependencies:
@@ -3149,7 +3149,7 @@ js-yaml@4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-js-yaml@^3.13.0, js-yaml@^3.13.1:
+js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.14.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
   dependencies:
@@ -4029,7 +4029,7 @@ object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
 
-object-treeify@^1.1.4:
+object-treeify@^1.1.33, object-treeify@^1.1.4:
   version "1.1.33"
   resolved "https://registry.npmjs.org/object-treeify/-/object-treeify-1.1.33.tgz"
 
